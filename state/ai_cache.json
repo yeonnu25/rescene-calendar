@@ -1,4 +1,16 @@
 {
+ "mnet-notice:6ad098be81b129370e830c7b": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "6ad098be81b129370e830c7b",
+  "prompt": 2,
+  "published": "2026-10-15",
+  "source": "mnet-notice",
+  "title": "로꼬 - 타타 (Feat. 미나미 of RESCENE) OUT NOW",
+  "url": "https://artist.mnetplus.world/main/stg/rescene-official/community/board/67a5c573036dc37e1e6d248c/post/6ad098be81b129370e830c7b",
+  "version": "0cd2d2993f2b36fb",
+  "where": "Mnet Plus 리센느 공지"
+ },
  "mnet-notice:6ae2eef69e643263ff264bd5": {
   "checked": "2026-11-21",
   "events": [],
@@ -157,6 +169,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "UgkxQX8qx5qJHxyGDe2J__fYlmTf3hewt3Kt",
+  "prompt": 2,
   "published": "2026-10-22",
   "source": "yt-post",
   "title": "[업로드 공지]",
@@ -178,14 +191,9 @@
  },
  "yt-post:UgkxSXXuOCyRDcMb4whOUam_itbvMiU3X_Eh": {
   "checked": "2026-11-21",
-  "events": [
-   {
-    "date": "2026-10-25",
-    "time": "19:00",
-    "title": "[YouTube] 안원잘부"
-   }
-  ],
+  "events": [],
   "id": "UgkxSXXuOCyRDcMb4whOUam_itbvMiU3X_Eh",
+  "prompt": 2,
   "published": "2026-10-24",
   "source": "yt-post",
   "title": "[업로드 공지]",
@@ -193,10 +201,23 @@
   "version": "104b05efc2a37a84",
   "where": "유튜브 원이 개인 채널 게시물"
  },
+ "yt-post:UgkxTXmDLu6fxIS9BrM_2H2_-y2mUboogtcb": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "UgkxTXmDLu6fxIS9BrM_2H2_-y2mUboogtcb",
+  "prompt": 2,
+  "published": "2026-10-22",
+  "source": "yt-post",
+  "title": "<2탄> 안원잘부 명장면 이모티콘 출시",
+  "url": "https://www.youtube.com/post/UgkxTXmDLu6fxIS9BrM_2H2_-y2mUboogtcb",
+  "version": "3811675d3c1ed60d",
+  "where": "유튜브 원이 개인 채널 게시물"
+ },
  "yt-post:UgkxWhRAzweFv_Q05VUoLy3XhDsjUQd4JVss": {
   "checked": "2026-11-21",
   "events": [],
   "id": "UgkxWhRAzweFv_Q05VUoLy3XhDsjUQd4JVss",
+  "prompt": 2,
   "published": "2026-10-22",
   "source": "yt-post",
   "title": "2027 안원잘부 다이어리가 발매되었습니다.",
@@ -216,6 +237,18 @@
   "version": "0e1bfafdfaf22fe7",
   "where": "유튜브 RESCENE 공식 유튜브 게시물"
  },
+ "yt-post:UgkxYZhaOWAFY3P8Zb6YbEYPXX7_lEb6kR61": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "UgkxYZhaOWAFY3P8Zb6YbEYPXX7_lEb6kR61",
+  "prompt": 2,
+  "published": "2026-10-22",
+  "source": "yt-post",
+  "title": "안녕하세요, <안원잘부>를 제작하고 있는 솔파스튜디오입니다.",
+  "url": "https://www.youtube.com/post/UgkxYZhaOWAFY3P8Zb6YbEYPXX7_lEb6kR61",
+  "version": "f4522ead664395bd",
+  "where": "유튜브 원이 개인 채널 게시물"
+ },
  "yt-post:Ugkxaf-kGq3v14IggILgJxyCKyRyR9vtwogi": {
   "checked": "2026-11-21",
   "events": [],
@@ -228,6 +261,18 @@
   "version": "9b39be8be7f64d3b",
   "where": "유튜브 RESCENE 공식 유튜브 게시물"
  },
+ "yt-post:Ugkxe2uAyuOyGBsKtywBmSDsJ21N3CyUsorz": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "Ugkxe2uAyuOyGBsKtywBmSDsJ21N3CyUsorz",
+  "prompt": 2,
+  "published": "2026-10-22",
+  "source": "yt-post",
+  "title": "안녕하세요. 솔파스튜디오입니다.",
+  "url": "https://www.youtube.com/post/Ugkxe2uAyuOyGBsKtywBmSDsJ21N3CyUsorz",
+  "version": "a5497947c5f0003e",
+  "where": "유튜브 원이 개인 채널 게시물"
+ },
  "yt-post:UgkxgO72hmUKpPbGKMt9yHmrr-_NGuUAtfcq": {
   "checked": "2026-11-21",
   "events": [],
@@ -239,6 +284,36 @@
   "url": "https://www.youtube.com/post/UgkxgO72hmUKpPbGKMt9yHmrr-_NGuUAtfcq",
   "version": "940c9a10ea771678",
   "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:UgkxgWb75jSgC8p8wIbPdAZmd_ju6_e63UoD": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "UgkxgWb75jSgC8p8wIbPdAZmd_ju6_e63UoD",
+  "prompt": 2,
+  "published": "2026-10-22",
+  "source": "yt-post",
+  "title": "[휴재 공지]",
+  "url": "https://www.youtube.com/post/UgkxgWb75jSgC8p8wIbPdAZmd_ju6_e63UoD",
+  "version": "2a66ce2a8adf24a9",
+  "where": "유튜브 원이 개인 채널 게시물"
+ },
+ "yt-post:Ugkxo1wSBOM0KwLSsrdILCC2ScPDzzdnJVpw": {
+  "checked": "2026-11-21",
+  "events": [
+   {
+    "date": "2026-10-22",
+    "time": null,
+    "title": "안원잘부 이모티콘 2 출시"
+   }
+  ],
+  "id": "Ugkxo1wSBOM0KwLSsrdILCC2ScPDzzdnJVpw",
+  "prompt": 2,
+  "published": "2026-10-22",
+  "source": "yt-post",
+  "title": "2탄 출바알",
+  "url": "https://www.youtube.com/post/Ugkxo1wSBOM0KwLSsrdILCC2ScPDzzdnJVpw",
+  "version": "836e4f67bbca98ef",
+  "where": "유튜브 원이 개인 채널 게시물"
  },
  "yt-post:Ugkxyl7lLnnpvxf3k5jTYklgaS1yDt_lAvth": {
   "checked": "2026-11-21",
