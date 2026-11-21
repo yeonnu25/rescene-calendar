@@ -51,6 +51,9 @@ def _to_event(entry: dict, raw: dict) -> Event | None:
     date = (raw.get("date") or "").strip()
     if not title or not _DATE.match(date):
         return None
+    # 원이 개인 채널의 영상 업로드·공개 일정은 넣지 않아요 (이모티콘·굿즈 출시 같은 건 넣어요)
+    if "원이" in entry.get("where", "") and re.search(r"업로드|프리미어|공개|휴재", title):
+        return None
     t, end_date, end_t = raw.get("time"), raw.get("end_date"), raw.get("end_time")
     t = t if t and _TIME.match(t) else None
     end_t = end_t if end_t and _TIME.match(end_t) else None

@@ -117,6 +117,15 @@ def main() -> int:
             counts["updated"] += 1
             log.info("수정: %s", _fmt(e))
 
+    # 넣지 않기로 한 채널(원이 개인 채널)의 영상 일정 정리
+    for key, item in list(existing.items()):
+        if key.startswith("youtube:") and key not in wanted \
+                and youtube.EXCLUDED_MARK in item.get("description", ""):
+            cal.delete(item["id"])
+            del existing[key]
+            counts["deleted"] += 1
+            log.info("삭제(제외한 채널): %s", item.get("summary"))
+
     # 확인한 기간 안에 있었는데 출처에서 사라진 일정 = 취소됨 → 삭제
     for key, item in existing.items():
         source = key.split(":", 1)[0]

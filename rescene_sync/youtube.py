@@ -20,8 +20,12 @@ DEFAULT_DURATION = dt.timedelta(hours=1)
 
 CHANNELS = {
     "UCtKtCiaWRz-d3EZn2xd1mdA": "RESCENE 공식 유튜브",
-    "UCWpY0eSJtyO-qNAPbKFRSSg": "원이 개인 채널 (helloiamwoninicetomeetyou)",
+    # 원이 개인 채널(안원잘부)의 영상 공개 일정은 넣지 않기로 했어요.
+    # 다시 넣고 싶으면 아래 줄 맨 앞의 # 을 지우세요.
+    # "UCWpY0eSJtyO-qNAPbKFRSSg": "원이 개인 채널 (helloiamwoninicetomeetyou)",
 }
+# 예전에 넣었던 이 채널 영상 일정은 캘린더에서 정리해요
+EXCLUDED_MARK = "helloiamwoninicetomeetyou"
 
 
 def _parse(s: str) -> dt.datetime:
