@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import json
 import logging
-from urllib.parse import quote
+import re
+from urllib.parse import quote, unquote
 
 from google.auth.transport.requests import AuthorizedSession
 from google.oauth2 import service_account
@@ -15,6 +16,21 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.events"]
 API = "https://www.googleapis.com/calendar/v3"
 
 
+def _extract_calendar_id(raw: str) -> str:
+    """캘린더 ID를 정리합니다.
+
+    공백·줄바꿈·따옴표를 지우고, 실수로 캘린더 '주소(URL)'를 넣었으면
+    (공개 URL, iCal 주소 등) 그 안에 들어 있는 캘린더 ID를 꺼냅니다.
+    """
+    value = raw.strip().strip("'\"").strip()
+    if "://" in value or "%40" in value:
+        m = re.search(r"([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+)", unquote(value))
+        if m:
+            log.info("캘린더 ID 자리에 주소(URL)가 들어 있어서, 그 안의 캘린더 ID를 꺼내 썼어요")
+            return m.group(1)
+    return value
+
+
 class GoogleCalendar:
     def __init__(self, service_account_json: str, calendar_id: str):
         info = json.loads(service_account_json)
@@ -22,7 +38,7 @@ class GoogleCalendar:
         self.session = AuthorizedSession(creds)
         self.sa_email = info.get("client_email", "?")
         # 복사·붙여넣기 할 때 섞여 들어오는 공백, 줄바꿈, 따옴표 제거
-        self.calendar_id = calendar_id.strip().strip("'\"").strip()
+        self.calendar_id = _extract_calendar_id(calendar_id)
         self.base = f"{API}/calendars/{quote(self.calendar_id, safe='')}/events"
 
     def describe_problem(self) -> str:
