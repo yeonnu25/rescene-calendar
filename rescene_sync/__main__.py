@@ -6,6 +6,7 @@
   GOOGLE_SERVICE_ACCOUNT_JSON  서비스 계정 키 파일(JSON)의 내용 전체
   GOOGLE_CALENDAR_ID           일정을 넣을 캘린더의 ID
   YOUTUBE_API_KEY              유튜브 API 키 (없으면 유튜브는 건너뜀)
+  GEMINI_API_KEY               Gemini API 키 (없으면 공지·게시물 AI 읽기는 건너뜀)
 
 구글 설정이 없으면 '연습 모드'로 돌아서, 캘린더는 건드리지 않고
 무엇을 할지 화면에만 보여줍니다.
@@ -18,7 +19,7 @@ import logging
 import os
 import sys
 
-from . import mnetplus, youtube
+from . import announcements, mnetplus, youtube
 from .models import KST, Event
 
 log = logging.getLogger("rescene_sync")
@@ -64,6 +65,22 @@ def main() -> int:
             failed = True
     else:
         log.info("YOUTUBE_API_KEY가 없어서 유튜브는 건너뛰어요")
+
+    gemini_key = os.environ.get("GEMINI_API_KEY")
+    if gemini_key:
+        try:
+            ai_events, problem = announcements.fetch(gemini_key, list(wanted.values()))
+            wanted.update({e.key: e for e in ai_events})
+            failed = failed or problem
+            # AI 일정은 '앞으로의 일정' 중에서 AI가 더는 뽑지 않은 것만 지워요
+            if announcements.CACHE_PATH.exists():
+                future = (dt.datetime.now(KST), dt.datetime(9999, 1, 1, tzinfo=KST))
+                windows["mnet-notice"] = windows["yt-post"] = future
+        except Exception:
+            log.exception("공지·게시물 AI 읽기에 실패했어요")
+            failed = True
+    else:
+        log.info("GEMINI_API_KEY가 없어서 공지·게시물 AI 읽기는 건너뛰어요")
 
     # 2) 구글 캘린더 설정이 없으면 연습 모드
     sa_json = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")

@@ -3,4 +3,6 @@ __pycache__/
 *.pyc
 # 구글 키 파일은 절대 저장소에 올리지 않기
 *.json
+# 단, AI가 읽은 글 기록은 저장소에 남겨요 (비밀 정보 없음)
+!state/ai_cache.json
 .env
