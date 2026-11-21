@@ -1,4 +1,54 @@
 {
+ "mnet-notice:6ae2eef69e643263ff264bd5": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "6ae2eef69e643263ff264bd5",
+  "published": "2026-10-29",
+  "source": "mnet-notice",
+  "title": "안녕하세요. 더뮤즈엔터테인먼트입니다.",
+  "url": "https://artist.mnetplus.world/main/stg/rescene-official/community/board/67a5c573036dc37e1e6d248c/post/6ae2eef69e643263ff264bd5",
+  "version": "a51a85d4ef1e4d5b",
+  "where": "Mnet Plus 리센느 공지"
+ },
+ "mnet-notice:6aea9fbd42650b5a3bf1f067": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "6aea9fbd42650b5a3bf1f067",
+  "published": "2026-11-04",
+  "source": "mnet-notice",
+  "title": "4th Mini Album [PULSE] 'With' 발매 기념 이벤트 안내",
+  "url": "https://artist.mnetplus.world/main/stg/rescene-official/community/board/67a5c573036dc37e1e6d248c/post/6aea9fbd42650b5a3bf1f067",
+  "version": "4e900f5b2dddc53f",
+  "where": "Mnet Plus 리센느 공지"
+ },
+ "mnet-notice:6af5bb87b946f90fca97783d": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "6af5bb87b946f90fca97783d",
+  "published": "2026-11-12",
+  "source": "mnet-notice",
+  "title": "소속 아티스트 권익 침해 관련 법적 대응 상황 안내",
+  "url": "https://artist.mnetplus.world/main/stg/rescene-official/community/board/67a5c573036dc37e1e6d248c/post/6af5bb87b946f90fca97783d",
+  "version": "b3271dd5000b9a64",
+  "where": "Mnet Plus 리센느 공지"
+ },
+ "mnet-notice:6af7dd0adddd2e3b9e84c6df": {
+  "checked": "2026-11-21",
+  "events": [
+   {
+    "date": "2026-11-27",
+    "time": "23:59",
+    "title": "제나 & 미나미 생일 서포트 마감"
+   }
+  ],
+  "id": "6af7dd0adddd2e3b9e84c6df",
+  "published": "2026-11-14",
+  "source": "mnet-notice",
+  "title": "RESCENE 제나 & 미나미 생일 서포트 신청 안내",
+  "url": "https://artist.mnetplus.world/main/stg/rescene-official/community/board/67a5c573036dc37e1e6d248c/post/6af7dd0adddd2e3b9e84c6df",
+  "version": "5783b3a6a9285567",
+  "where": "Mnet Plus 리센느 공지"
+ },
  "mnet-notice:6afd6bb0cd641632763bda73": {
   "checked": "2026-11-21",
   "events": [],
@@ -21,6 +71,25 @@
   "version": "19898ef6e94bdc7b",
   "where": "유튜브 RESCENE 공식 유튜브 게시물"
  },
+ "yt-post:Ugkx2_nHXAvXPOHh4v5gyXlFR6fwcVol0nO6": {
+  "checked": "2026-11-21",
+  "events": [
+   {
+    "date": "2026-11-11",
+    "end_date": null,
+    "end_time": null,
+    "time": "11:00",
+    "title": "뮤직뱅크 사전 투표 마감"
+   }
+  ],
+  "id": "Ugkx2_nHXAvXPOHh4v5gyXlFR6fwcVol0nO6",
+  "published": "2026-11-10",
+  "source": "yt-post",
+  "title": "KBS2 뮤직뱅크 사전 투표 안내",
+  "url": "https://www.youtube.com/post/Ugkx2_nHXAvXPOHh4v5gyXlFR6fwcVol0nO6",
+  "version": "2050ecb5a4ba81f8",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
  "yt-post:Ugkx7NnQ5aY2yVXy5kV2jewK8nm2lFDgtlbW": {
   "checked": "2026-11-21",
   "events": [],
@@ -30,6 +99,136 @@
   "title": "RESCENE(리센느) ‘With’ OFFICIAL MV 30Million Views on YouTube 🪽",
   "url": "https://www.youtube.com/post/Ugkx7NnQ5aY2yVXy5kV2jewK8nm2lFDgtlbW",
   "version": "cccf6094624ad263",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:Ugkx8OmbKES_3N2qGBhZR6Xks4q_HQ5uHdlB": {
+  "checked": "2026-11-21",
+  "events": [
+   {
+    "date": "2026-11-13",
+    "end_date": null,
+    "end_time": null,
+    "time": "23:59",
+    "title": "SBS 인기가요 사전 투표 마감"
+   }
+  ],
+  "id": "Ugkx8OmbKES_3N2qGBhZR6Xks4q_HQ5uHdlB",
+  "published": "2026-11-12",
+  "source": "yt-post",
+  "title": "SBS 인기가요 사전 투표 안내",
+  "url": "https://www.youtube.com/post/Ugkx8OmbKES_3N2qGBhZR6Xks4q_HQ5uHdlB",
+  "version": "a988a83e40d313f3",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:UgkxK_iyMWUp6xZjJ_buNXlt8AsCA1ipa9At": {
+  "checked": "2026-11-21",
+  "events": [
+   {
+    "date": "2026-11-10",
+    "time": "15:00",
+    "title": "2027 시즌 그리팅 예약판매 시작"
+   }
+  ],
+  "id": "UgkxK_iyMWUp6xZjJ_buNXlt8AsCA1ipa9At",
+  "published": "2026-11-09",
+  "source": "yt-post",
+  "title": "RESCENE 2027 SEASON'S GREETINGS [PAGES OF YOUTH] ✨",
+  "url": "https://www.youtube.com/post/UgkxK_iyMWUp6xZjJ_buNXlt8AsCA1ipa9At",
+  "version": "bc16cb01280992dd",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:UgkxQX8qx5qJHxyGDe2J__fYlmTf3hewt3Kt": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "UgkxQX8qx5qJHxyGDe2J__fYlmTf3hewt3Kt",
+  "published": "2026-10-22",
+  "source": "yt-post",
+  "title": "[업로드 공지]",
+  "url": "https://www.youtube.com/post/UgkxQX8qx5qJHxyGDe2J__fYlmTf3hewt3Kt",
+  "version": "cebd8963ab1b087c",
+  "where": "유튜브 원이 개인 채널 게시물"
+ },
+ "yt-post:UgkxRlAJmIOJ26B-mpCDIKzTabs3lY8G91Wd": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "UgkxRlAJmIOJ26B-mpCDIKzTabs3lY8G91Wd",
+  "published": "2026-11-13",
+  "source": "yt-post",
+  "title": "소속 아티스트 권익 침해 관련 법적 대응 상황 안내",
+  "url": "https://www.youtube.com/post/UgkxRlAJmIOJ26B-mpCDIKzTabs3lY8G91Wd",
+  "version": "d01167c99a8bb820",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:UgkxSXXuOCyRDcMb4whOUam_itbvMiU3X_Eh": {
+  "checked": "2026-11-21",
+  "events": [
+   {
+    "date": "2026-10-25",
+    "time": "19:00",
+    "title": "[YouTube] 안원잘부"
+   }
+  ],
+  "id": "UgkxSXXuOCyRDcMb4whOUam_itbvMiU3X_Eh",
+  "published": "2026-10-24",
+  "source": "yt-post",
+  "title": "[업로드 공지]",
+  "url": "https://www.youtube.com/post/UgkxSXXuOCyRDcMb4whOUam_itbvMiU3X_Eh",
+  "version": "104b05efc2a37a84",
+  "where": "유튜브 원이 개인 채널 게시물"
+ },
+ "yt-post:UgkxWhRAzweFv_Q05VUoLy3XhDsjUQd4JVss": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "UgkxWhRAzweFv_Q05VUoLy3XhDsjUQd4JVss",
+  "published": "2026-10-22",
+  "source": "yt-post",
+  "title": "2027 안원잘부 다이어리가 발매되었습니다.",
+  "url": "https://www.youtube.com/post/UgkxWhRAzweFv_Q05VUoLy3XhDsjUQd4JVss",
+  "version": "325e6d87eed6a9b8",
+  "where": "유튜브 원이 개인 채널 게시물"
+ },
+ "yt-post:UgkxWqi4GO2Z_EQ3ZEsTFopjNZEN4b5D8bgw": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "UgkxWqi4GO2Z_EQ3ZEsTFopjNZEN4b5D8bgw",
+  "published": "2026-11-10",
+  "source": "yt-post",
+  "title": "THE SHOW(더쇼) 실시간 투표 안내",
+  "url": "https://www.youtube.com/post/UgkxWqi4GO2Z_EQ3ZEsTFopjNZEN4b5D8bgw",
+  "version": "0e1bfafdfaf22fe7",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:Ugkxaf-kGq3v14IggILgJxyCKyRyR9vtwogi": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "Ugkxaf-kGq3v14IggILgJxyCKyRyR9vtwogi",
+  "published": "2026-11-15",
+  "source": "yt-post",
+  "title": "SBS 인기가요 실시간 투표 안내",
+  "url": "https://www.youtube.com/post/Ugkxaf-kGq3v14IggILgJxyCKyRyR9vtwogi",
+  "version": "9b39be8be7f64d3b",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:UgkxgO72hmUKpPbGKMt9yHmrr-_NGuUAtfcq": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "UgkxgO72hmUKpPbGKMt9yHmrr-_NGuUAtfcq",
+  "published": "2026-11-10",
+  "source": "yt-post",
+  "title": "RESCENE(리센느) ‘With’ OFFICIAL MV 20Million Views on YouTube 🪽",
+  "url": "https://www.youtube.com/post/UgkxgO72hmUKpPbGKMt9yHmrr-_NGuUAtfcq",
+  "version": "940c9a10ea771678",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:Ugkxyl7lLnnpvxf3k5jTYklgaS1yDt_lAvth": {
+  "checked": "2026-11-21",
+  "events": [],
+  "id": "Ugkxyl7lLnnpvxf3k5jTYklgaS1yDt_lAvth",
+  "published": "2026-11-14",
+  "source": "yt-post",
+  "title": "MBC 쇼음악중심 실시간 투표 안내",
+  "url": "https://www.youtube.com/post/Ugkxyl7lLnnpvxf3k5jTYklgaS1yDt_lAvth",
+  "version": "8c51ec8500d53217",
   "where": "유튜브 RESCENE 공식 유튜브 게시물"
  }
 }
