@@ -47,7 +47,7 @@ def save_cache(cache: dict) -> None:
 
 def _to_event(entry: dict, raw: dict) -> Event | None:
     """AI 답변 한 줄을 캘린더 일정으로. 형식이 이상하면 버려요."""
-    title = (raw.get("title") or "").strip()
+    title = re.sub(r"^(\s*\[[^\]]*\])+\s*", "", (raw.get("title") or "")).strip()
     date = (raw.get("date") or "").strip()
     if not title or not _DATE.match(date):
         return None
@@ -124,7 +124,7 @@ def fetch(api_key: str, known: list[Event]) -> tuple[list[Event], bool]:
     t0 = time.monotonic()
     for post in sorted(found, key=lambda p: p.published, reverse=True):
         entry = cache.get(post.key)
-        if entry and entry.get("version") == post.version:
+        if entry and entry.get("version") == post.version and entry.get("prompt") == ai.PROMPT_VERSION:
             continue  # 이미 읽은 글
         if calls >= MAX_AI_CALLS or time.monotonic() - t0 > AI_TIME_BUDGET:
             log.info("이번 실행의 AI 읽기 한도에 닿아서 나머지는 다음에 읽어요")
@@ -141,7 +141,7 @@ def fetch(api_key: str, known: list[Event]) -> tuple[list[Event], bool]:
             continue
         cache[post.key] = {
             "source": post.source, "id": post.id, "where": post.where, "title": post.title,
-            "url": post.url, "published": published, "version": post.version,
+            "url": post.url, "published": published, "version": post.version, "prompt": ai.PROMPT_VERSION,
             "checked": now.date().isoformat(), "events": raw,
         }
         save_cache(cache)  # 중간에 멈춰도 읽은 만큼은 남게
@@ -156,13 +156,15 @@ def fetch(api_key: str, known: list[Event]) -> tuple[list[Event], bool]:
         del cache[k]
     save_cache(cache)
 
-    # 같은 공지가 여러 곳에 올라와도 일정은 하나만 (먼저 올라온 글 기준)
+    # 같은 공지가 여러 곳에 올라와도 일정은 하나만 (먼저 올라온 글 기준).
+    # 공식 일정·유튜브 예정 영상과 시작 시각이 똑같은 것도 같은 일정으로 보고 빼요.
+    taken = {e.start for e in known if isinstance(e.start, dt.datetime)}
     events, seen = [], set()
     for entry in sorted(cache.values(), key=lambda v: (v.get("published", ""), v["id"])):
         for raw in entry.get("events", []):
             e = _to_event(entry, raw)
             same = (str(e.start), e.title.split(" ", 1)[-1].replace(" ", "")) if e else None
-            if e and same not in seen:
+            if e and same not in seen and e.start not in taken:
                 seen.add(same)
                 events.append(e)
     return events, problem
