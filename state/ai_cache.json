@@ -3,6 +3,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "6ae2eef69e643263ff264bd5",
+  "prompt": 2,
   "published": "2026-10-29",
   "source": "mnet-notice",
   "title": "안녕하세요. 더뮤즈엔터테인먼트입니다.",
@@ -12,8 +13,15 @@
  },
  "mnet-notice:6aea9fbd42650b5a3bf1f067": {
   "checked": "2026-11-21",
-  "events": [],
+  "events": [
+   {
+    "date": "2026-11-10",
+    "time": "23:59",
+    "title": "'With' 발매 기념 이벤트 참여 마감"
+   }
+  ],
   "id": "6aea9fbd42650b5a3bf1f067",
+  "prompt": 2,
   "published": "2026-11-04",
   "source": "mnet-notice",
   "title": "4th Mini Album [PULSE] 'With' 발매 기념 이벤트 안내",
@@ -25,6 +33,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "6af5bb87b946f90fca97783d",
+  "prompt": 2,
   "published": "2026-11-12",
   "source": "mnet-notice",
   "title": "소속 아티스트 권익 침해 관련 법적 대응 상황 안내",
@@ -37,11 +46,14 @@
   "events": [
    {
     "date": "2026-11-27",
+    "end_date": null,
+    "end_time": null,
     "time": "23:59",
-    "title": "제나 & 미나미 생일 서포트 마감"
+    "title": "제나 미나미 생일 서포트 신청 마감"
    }
   ],
   "id": "6af7dd0adddd2e3b9e84c6df",
+  "prompt": 2,
   "published": "2026-11-14",
   "source": "mnet-notice",
   "title": "RESCENE 제나 & 미나미 생일 서포트 신청 안내",
@@ -53,6 +65,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "6afd6bb0cd641632763bda73",
+  "prompt": 2,
   "published": "2026-11-18",
   "source": "mnet-notice",
   "title": "사랑해볼래, 나 - 미나미 of RESCENE OUT NOW 💌",
@@ -64,6 +77,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "Ugkx1Ll13IBgU1niOUZzhcE7fiMEcvoG5fWn",
+  "prompt": 2,
   "published": "2026-11-18",
   "source": "yt-post",
   "title": "사랑해볼래, 나 - 미나미 of RESCENE OUT NOW 💌",
@@ -83,6 +97,7 @@
    }
   ],
   "id": "Ugkx2_nHXAvXPOHh4v5gyXlFR6fwcVol0nO6",
+  "prompt": 2,
   "published": "2026-11-10",
   "source": "yt-post",
   "title": "KBS2 뮤직뱅크 사전 투표 안내",
@@ -94,6 +109,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "Ugkx7NnQ5aY2yVXy5kV2jewK8nm2lFDgtlbW",
+  "prompt": 2,
   "published": "2026-11-17",
   "source": "yt-post",
   "title": "RESCENE(리센느) ‘With’ OFFICIAL MV 30Million Views on YouTube 🪽",
@@ -106,13 +122,12 @@
   "events": [
    {
     "date": "2026-11-13",
-    "end_date": null,
-    "end_time": null,
     "time": "23:59",
     "title": "SBS 인기가요 사전 투표 마감"
    }
   ],
   "id": "Ugkx8OmbKES_3N2qGBhZR6Xks4q_HQ5uHdlB",
+  "prompt": 2,
   "published": "2026-11-12",
   "source": "yt-post",
   "title": "SBS 인기가요 사전 투표 안내",
@@ -126,10 +141,11 @@
    {
     "date": "2026-11-10",
     "time": "15:00",
-    "title": "2027 시즌 그리팅 예약판매 시작"
+    "title": "시즌 그리팅 예약 판매 시작"
    }
   ],
   "id": "UgkxK_iyMWUp6xZjJ_buNXlt8AsCA1ipa9At",
+  "prompt": 2,
   "published": "2026-11-09",
   "source": "yt-post",
   "title": "RESCENE 2027 SEASON'S GREETINGS [PAGES OF YOUTH] ✨",
@@ -152,6 +168,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "UgkxRlAJmIOJ26B-mpCDIKzTabs3lY8G91Wd",
+  "prompt": 2,
   "published": "2026-11-13",
   "source": "yt-post",
   "title": "소속 아티스트 권익 침해 관련 법적 대응 상황 안내",
@@ -191,6 +208,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "UgkxWqi4GO2Z_EQ3ZEsTFopjNZEN4b5D8bgw",
+  "prompt": 2,
   "published": "2026-11-10",
   "source": "yt-post",
   "title": "THE SHOW(더쇼) 실시간 투표 안내",
@@ -202,6 +220,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "Ugkxaf-kGq3v14IggILgJxyCKyRyR9vtwogi",
+  "prompt": 2,
   "published": "2026-11-15",
   "source": "yt-post",
   "title": "SBS 인기가요 실시간 투표 안내",
@@ -213,6 +232,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "UgkxgO72hmUKpPbGKMt9yHmrr-_NGuUAtfcq",
+  "prompt": 2,
   "published": "2026-11-10",
   "source": "yt-post",
   "title": "RESCENE(리센느) ‘With’ OFFICIAL MV 20Million Views on YouTube 🪽",
@@ -224,6 +244,7 @@
   "checked": "2026-11-21",
   "events": [],
   "id": "Ugkxyl7lLnnpvxf3k5jTYklgaS1yDt_lAvth",
+  "prompt": 2,
   "published": "2026-11-14",
   "source": "yt-post",
   "title": "MBC 쇼음악중심 실시간 투표 안내",
