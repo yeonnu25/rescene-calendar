@@ -16,9 +16,10 @@ from .posts import Post
 log = logging.getLogger(__name__)
 
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-# 앞의 모델이 없어졌거나 막히면 다음 모델로 넘어가요 (모두 무료 등급이 있는 모델)
+# 앞의 모델이 없어졌거나 막히면 다음 모델로 넘어가요 (모두 무료 등급이 있는 모델).
+# 날짜 뽑기는 가벼운 일이라 빠르고 덜 붐비는 lite 모델을 먼저 써요.
 MODELS = [m for m in [os.environ.get("GEMINI_MODEL"),
-                      "gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"] if m]
+                      "gemini-3.5-flash-lite", "gemini-3.6-flash", "gemini-3.8-flash"] if m]
 MAX_IMAGES = 3
 MAX_IMAGE_BYTES = 4_000_000
 
