@@ -2,7 +2,7 @@ name: 리센느 일정 동기화
 
 on:
   schedule:
-    - cron: "17 * * * *"   # 매시 17분 (정각은 GitHub가 붐벼서 늦어지기 쉬움)
+    - cron: "17 * * * *"   # 매시 17분 (정각은 GitHub가 붐벼서 늦어지기 쉬움). GitHub 사정으로 몇 분~수십 분 늦을 수 있어요
   workflow_dispatch:        # Actions 화면에서 '지금 실행' 버튼으로도 실행 가능
 
 permissions:
