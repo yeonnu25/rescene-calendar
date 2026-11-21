@@ -158,13 +158,18 @@ def fetch(api_key: str, known: list[Event]) -> tuple[list[Event], bool]:
 
     # 같은 공지가 여러 곳에 올라와도 일정은 하나만 (먼저 올라온 글 기준).
     # 공식 일정·유튜브 예정 영상과 시작 시각이 똑같은 것도 같은 일정으로 보고 빼요.
-    taken = {e.start for e in known if isinstance(e.start, dt.datetime)}
+    taken = [e.start for e in known if isinstance(e.start, dt.datetime)]
+
+    def overlaps_known(e: Event) -> bool:
+        return isinstance(e.start, dt.datetime) and any(
+            abs(e.start - t) <= dt.timedelta(minutes=30) for t in taken)
+
     events, seen = [], set()
     for entry in sorted(cache.values(), key=lambda v: (v.get("published", ""), v["id"])):
         for raw in entry.get("events", []):
             e = _to_event(entry, raw)
             same = (str(e.start), e.title.split(" ", 1)[-1].replace(" ", "")) if e else None
-            if e and same not in seen and e.start not in taken:
+            if e and same not in seen and not overlaps_known(e):
                 seen.add(same)
                 events.append(e)
     return events, problem

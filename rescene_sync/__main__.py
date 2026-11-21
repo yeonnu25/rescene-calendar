@@ -72,10 +72,11 @@ def main() -> int:
             ai_events, problem = announcements.fetch(gemini_key, list(wanted.values()))
             wanted.update({e.key: e for e in ai_events})
             failed = failed or problem
-            # AI 일정은 '앞으로의 일정' 중에서 AI가 더는 뽑지 않은 것만 지워요
+            # AI 일정은 최근 60일 ~ 앞으로의 일정 중에서 AI가 더는 뽑지 않은 것만 지워요
+            # (AI 기록은 180일 동안 남아 있어서, 이 기간의 일정은 기록과 비교할 수 있어요)
             if announcements.CACHE_PATH.exists():
-                future = (dt.datetime.now(KST), dt.datetime(9999, 1, 1, tzinfo=KST))
-                windows["mnet-notice"] = windows["yt-post"] = future
+                recent = (dt.datetime.now(KST) - dt.timedelta(days=60), dt.datetime(9999, 1, 1, tzinfo=KST))
+                windows["mnet-notice"] = windows["yt-post"] = recent
         except Exception:
             log.exception("공지·게시물 AI 읽기에 실패했어요")
             failed = True
