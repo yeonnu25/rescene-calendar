@@ -24,6 +24,7 @@ log = logging.getLogger(__name__)
 CACHE_PATH = Path(__file__).resolve().parent.parent / "state" / "ai_cache.json"
 LOOKBACK_DAYS = 45        # 이보다 오래된 글은 읽지 않아요
 MAX_AI_CALLS = 15         # 한 번 실행에 AI 호출 최대 횟수 (나머지는 다음 시간에)
+AI_TIME_BUDGET = 8 * 60   # 한 번 실행에 AI 읽기에 쓰는 최대 시간(초)
 FORGET_AFTER_DAYS = 180   # 이보다 오래된 글의 기록은 지워요 (캘린더의 지난 일정은 그대로 남아요)
 DEFAULT_DURATION = dt.timedelta(hours=1)
 LABEL = {"mnet-notice": "[공지]", "yt-post": "[유튜브 공지]"}
@@ -120,12 +121,13 @@ def fetch(api_key: str, known: list[Event]) -> tuple[list[Event], bool]:
             problem = True
 
     calls = ai_errors = 0
+    t0 = time.monotonic()
     for post in sorted(found, key=lambda p: p.published, reverse=True):
         entry = cache.get(post.key)
         if entry and entry.get("version") == post.version:
             continue  # 이미 읽은 글
-        if calls >= MAX_AI_CALLS:
-            log.info("이번 실행에서 AI 호출 한도(%d번)에 닿아서 나머지는 다음에 읽어요", MAX_AI_CALLS)
+        if calls >= MAX_AI_CALLS or time.monotonic() - t0 > AI_TIME_BUDGET:
+            log.info("이번 실행의 AI 읽기 한도에 닿아서 나머지는 다음에 읽어요")
             break
         if calls:
             time.sleep(4)  # 무료 등급 분당 한도를 넘지 않게 천천히
@@ -142,6 +144,7 @@ def fetch(api_key: str, known: list[Event]) -> tuple[list[Event], bool]:
             "url": post.url, "published": published, "version": post.version,
             "checked": now.date().isoformat(), "events": raw,
         }
+        save_cache(cache)  # 중간에 멈춰도 읽은 만큼은 남게
         log.info("AI가 읽음: %s → 일정 %d개", post.title[:50], len(raw))
 
     if calls and ai_errors == calls:

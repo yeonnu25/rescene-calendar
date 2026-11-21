@@ -111,18 +111,29 @@ def extract(post: Post, known: list[str], api_key: str, today: dt.date) -> list[
     }
     last = None
     for model in MODELS:
+        r = None
         for attempt in range(3):
-            r = session.post(API.format(model=model), json=body,
-                             headers={"x-goog-api-key": api_key}, timeout=120)
+            started = time.monotonic()
+            try:
+                r = session.post(API.format(model=model), json=body,
+                                 headers={"x-goog-api-key": api_key}, timeout=(10, 90))
+            except requests.RequestException as e:  # 시간 초과 등 → 같은 모델은 그만, 다음 모델로
+                last = f"{model}: {type(e).__name__}"
+                log.warning("  %s 응답 없음 (%.0f초) → 다음 모델 시도", model, time.monotonic() - started)
+                r = None
+                break
+            log.info("  %s 응답 %d (%.0f초)", model, r.status_code, time.monotonic() - started)
             if r.status_code == 429 or r.status_code >= 500:  # 잠깐 너무 많이 썼거나 서버 문제
                 last = f"{model}: {r.status_code} {r.text[:200]}"
                 time.sleep(20 * (attempt + 1))
+                r = None
                 continue
             break
-        else:
-            continue  # 3번 다 실패 → 다음 모델
+        if r is None:
+            continue  # 이 모델은 실패 → 다음 모델
         if r.status_code in (400, 403, 404) and "API key" not in r.text and "PERMISSION" not in r.text:
             last = f"{model}: {r.status_code} {r.text[:200]}"
+            log.warning("  %s 사용 불가: %s", model, r.text[:200])
             continue  # 모델 이름이 없어졌거나 이 모델을 못 씀 → 다음 모델
         if r.status_code >= 400:
             raise AIError(f"Gemini 요청 실패 ({r.status_code}): {r.text[:300]}")
