@@ -85,6 +85,18 @@
   "version": "3334144eb1bc7a20",
   "where": "Mnet Plus 리센느 공지"
  },
+ "mnet-notice:6b040283db175029ee647b76": {
+  "checked": "2026-11-23",
+  "events": [],
+  "id": "6b040283db175029ee647b76",
+  "prompt": 2,
+  "published": "2026-11-23",
+  "source": "mnet-notice",
+  "title": "Love Again (feat. 제나 of RESCENE) - 한해, 문세윤 OUT NOW",
+  "url": "https://artist.mnetplus.world/main/stg/rescene-official/community/board/67a5c573036dc37e1e6d248c/post/6b040283db175029ee647b76",
+  "version": "8926991e33043ed1",
+  "where": "Mnet Plus 리센느 공지"
+ },
  "yt-post:Ugkx1Ll13IBgU1niOUZzhcE7fiMEcvoG5fWn": {
   "checked": "2026-11-21",
   "events": [],
@@ -115,6 +127,18 @@
   "title": "KBS2 뮤직뱅크 사전 투표 안내",
   "url": "https://www.youtube.com/post/Ugkx2_nHXAvXPOHh4v5gyXlFR6fwcVol0nO6",
   "version": "2050ecb5a4ba81f8",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:Ugkx4K7B4FAwb_2o3lgkh-pldQNLOleSHAj-": {
+  "checked": "2026-11-23",
+  "events": [],
+  "id": "Ugkx4K7B4FAwb_2o3lgkh-pldQNLOleSHAj-",
+  "prompt": 2,
+  "published": "2026-11-23",
+  "source": "yt-post",
+  "title": "Love Again (feat. 제나 of RESCENE) - 한해, 문세윤 OUT NOW",
+  "url": "https://www.youtube.com/post/Ugkx4K7B4FAwb_2o3lgkh-pldQNLOleSHAj-",
+  "version": "2935e75dabd9ac57",
   "where": "유튜브 RESCENE 공식 유튜브 게시물"
  },
  "yt-post:Ugkx7NnQ5aY2yVXy5kV2jewK8nm2lFDgtlbW": {
