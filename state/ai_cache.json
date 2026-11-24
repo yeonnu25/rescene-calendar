@@ -97,6 +97,18 @@
   "version": "8926991e33043ed1",
   "where": "Mnet Plus 리센느 공지"
  },
+ "mnet-notice:6b05a88ba076dc06b4f6804e": {
+  "checked": "2026-11-25",
+  "events": [],
+  "id": "6b05a88ba076dc06b4f6804e",
+  "prompt": 2,
+  "published": "2026-11-25",
+  "source": "mnet-notice",
+  "title": "Magic (From \"Hexed\"/Korean Single Version) - RESCENE OUT NOW",
+  "url": "https://artist.mnetplus.world/main/stg/rescene-official/community/board/67a5c573036dc37e1e6d248c/post/6b05a88ba076dc06b4f6804e",
+  "version": "1cf58566cbdbf27d",
+  "where": "Mnet Plus 리센느 공지"
+ },
  "yt-post:Ugkx1Ll13IBgU1niOUZzhcE7fiMEcvoG5fWn": {
   "checked": "2026-11-21",
   "events": [],
@@ -169,6 +181,18 @@
   "title": "SBS 인기가요 사전 투표 안내",
   "url": "https://www.youtube.com/post/Ugkx8OmbKES_3N2qGBhZR6Xks4q_HQ5uHdlB",
   "version": "a988a83e40d313f3",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
+ "yt-post:UgkxAMUlT6_EcXv-7aCFZJ7S-2wHP7MHOKrE": {
+  "checked": "2026-11-25",
+  "events": [],
+  "id": "UgkxAMUlT6_EcXv-7aCFZJ7S-2wHP7MHOKrE",
+  "prompt": 2,
+  "published": "2026-11-25",
+  "source": "yt-post",
+  "title": "Magic (From \"Hexed\"/Korean Single Version) - RESCENE OUT NOW",
+  "url": "https://www.youtube.com/post/UgkxAMUlT6_EcXv-7aCFZJ7S-2wHP7MHOKrE",
+  "version": "770dc8ed6b55964e",
   "where": "유튜브 RESCENE 공식 유튜브 게시물"
  },
  "yt-post:UgkxK_iyMWUp6xZjJ_buNXlt8AsCA1ipa9At": {
