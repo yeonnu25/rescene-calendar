@@ -237,6 +237,24 @@
   "version": "450b01d8c632f908",
   "where": "유튜브 RESCENE 공식 유튜브 게시물"
  },
+ "yt-post:UgkxQ782Gi4VHkhLFipZi0Fy2Poc8SoyU4a9": {
+  "checked": "2026-11-27",
+  "events": [
+   {
+    "date": "2026-11-27",
+    "time": "16:30",
+    "title": "제나 생일 기념 라이브"
+   }
+  ],
+  "id": "UgkxQ782Gi4VHkhLFipZi0Fy2Poc8SoyU4a9",
+  "prompt": 2,
+  "published": "2026-11-27",
+  "source": "yt-post",
+  "title": "덜컹덜컹 제나 생일 달려간다 🚌",
+  "url": "https://www.youtube.com/post/UgkxQ782Gi4VHkhLFipZi0Fy2Poc8SoyU4a9",
+  "version": "0f1df4b255303c37",
+  "where": "유튜브 RESCENE 공식 유튜브 게시물"
+ },
  "yt-post:UgkxQX8qx5qJHxyGDe2J__fYlmTf3hewt3Kt": {
   "checked": "2026-11-21",
   "events": [],
